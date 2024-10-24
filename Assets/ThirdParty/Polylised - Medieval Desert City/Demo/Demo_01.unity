@@ -388,11 +388,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b723b9fcb54e15946a7518a703a4ca5c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4525129552197150, guid: 571a69f902adb9846a5eabd744415ecc,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 395003493}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1200368573225118, guid: 571a69f902adb9846a5eabd744415ecc,
         type: 3}
@@ -4054,7 +4050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 0
-  m_FollowOffset: {x: 0, y: 0, z: 0}
+  m_FollowOffset: {x: -9, y: 60.07, z: 1.2}
   m_XDamping: 0
   m_YDamping: 1
   m_ZDamping: 1
@@ -7876,7 +7872,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 169895686}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 635961371}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 395003492}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &169895686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17456,7 +17476,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 448204045}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 93.1
+    FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 9999
@@ -17482,14 +17502,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395003491}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.67985034, y: 0.5006607, z: 0.31775385, w: 0.43147996}
-  m_LocalPosition: {x: -11.368517, y: 4.2228847, z: 6.695258}
-  m_LocalScale: {x: 0.55049807, y: 0.54245216, z: 0.48867658}
+  m_LocalRotation: {x: 0.27865115, y: 0.4417323, z: -0.14651832, w: 0.8400944}
+  m_LocalPosition: {x: 182.96, y: 20.16, z: 85.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 93587549}
-  m_Father: {fileID: 448204045}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0.992, y: 44.489, z: 0.723}
 --- !u!1001 &395568897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27943,7 +27963,7 @@ GameObject:
   - component: {fileID: 635961370}
   - component: {fileID: 635961371}
   m_Layer: 0
-  m_Name: Virtual Camera
+  m_Name: Camera Voiture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27981,7 +28001,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 28
+  m_Priority: 12
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 658161833}
   m_Follow: {fileID: 658161833}
@@ -36560,6 +36580,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 846672839}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &848411020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848411021}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848411021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848411020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 635.5588, y: 366.34137, z: -212.81358}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &849216654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41474,7 +41525,7 @@ MonoBehaviour:
   m_PlayOnAwake: 1
   m_LoopMode: 1
   m_Method: 1
-  m_Duration: 19.394344
+  m_Duration: 18.591661
   m_MaxSpeed: 11.2
   m_EasingMode: 0
   m_AlignmentMode: 1
@@ -48727,7 +48778,7 @@ MonoBehaviour:
   m_UpdateMethod: 2
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
-    m_Style: 1
+    m_Style: 0
     m_Time: 2
     m_CustomCurve:
       serializedVersion: 2
@@ -55857,7 +55908,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1289004931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 395003492}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 635961371}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1289004931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88027,72 +88102,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1075898967}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2076699096
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2076699098}
-  - component: {fileID: 2076699097}
-  m_Layer: 0
-  m_Name: CinemachineBrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2076699097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076699096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &2076699098
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076699096}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.12607957, y: 0.28911284, z: -0.038443476, w: 0.9481771}
-  m_LocalPosition: {x: -42.69751, y: 2.23, z: -99.80454}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2076943133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91801,11 +91810,12 @@ SceneRoots:
   - {fileID: 309667719}
   - {fileID: 147515183}
   - {fileID: 1684980900}
+  - {fileID: 395003493}
   - {fileID: 156780011}
   - {fileID: 978280638}
   - {fileID: 658161831}
-  - {fileID: 2076699098}
   - {fileID: 635961370}
   - {fileID: 871253480}
   - {fileID: 38954262}
   - {fileID: 1428184349}
+  - {fileID: 848411021}
